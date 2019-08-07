@@ -1,11 +1,11 @@
 {
-  "name": "argon-design-system-react",
+  "name": "website",
   "version": "1.0.0",
-  "description": "React version of Argon Design System by Creative Tim",
+  "description": "Serenpathy",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+    "url": "git+https://github.com/serenpathy/werbsite.git"
   },
   "keywords": [
     "react",
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
   },
-  "homepage": "https://demos.creative-tim.com/argon-design-system-react/",
+  "homepage": "https://www.serenpathy.com",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
