@@ -18,6 +18,11 @@ ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Route path="/" exact render={props => <Home {...props} />} />
+      <Route
+        path="/landing-page"
+        exact
+        render={props => <Landing {...props} />}
+      />
       {/* <Route
         path="/home"
         exact

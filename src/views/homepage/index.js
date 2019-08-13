@@ -57,13 +57,14 @@ class Landing extends React.Component {
                   <Row>
                     <Col lg="7">
                       <h1 className="display-3 text-white">
-                        Find the right therapists. Quicker.{" "}
-                        <span> Search, book and review therapists.</span>
+                        Find the right mental health provider. Quicker.
                       </h1>
                       <p className="lead text-white">
-                        Serenpathy is a comprehensive review system that enables
-                        clients and peers to accurately review and endorse
-                        therapists based on research-based qualitative metrics.
+                        A web platform for professional therapists featuring
+                        verified reviews and the ability to book online. Find
+                        the right therapist using reviews from their previous
+                        clients and book them instantly.
+                        <br />
                         <br />
                         <small>
                           Our product is still in development but we can notify
@@ -87,17 +88,15 @@ class Landing extends React.Component {
                             onFocus={e => this.setState({ emailFocused: true })}
                             onBlur={e => this.setState({ emailFocused: false })}
                           />
+                          <Button
+                            className="btn-icon mb-3 mb-sm-0"
+                            color="secondary"
+                            href="#"
+                          >
+                            <span className="btn-inner--text">Notify Me</span>
+                          </Button>
                         </InputGroup>
                       </FormGroup>
-                      <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="secondary"
-                          href="#"
-                        >
-                          <span className="btn-inner--text">Notify Me</span>
-                        </Button>
-                      </div>
                     </Col>
                     <Col className="order-md-2" md="5">
                       <img
@@ -191,114 +190,131 @@ class Landing extends React.Component {
           <section className="section section-lg">
             <Container>
               <Row className="row-grid align-items-center">
-                <Col className="order-md-2" md="6">
-                  <img
-                    alt="..."
-                    className="img-fluid floating"
-                    src={require("assets/img/theme/promo-1.png")}
-                  />
+                <Col className="order-md-1" md="12">
+                  <h1>Features</h1>
+                  <p>
+                    To help you find the right therapist the easiest and
+                    quickest we are developing the following the following
+                    features.
+                  </p>
                 </Col>
-                <Col className="order-md-1" md="6">
-                  <div className="pr-md-5">
-                    <h3>Features</h3>
-                    <p>
-                      To help you find the right therapist the easiest and
-                      quickest we are developing the following the following
-                      features.
-                    </p>
-                    <ul className="list-unstyled mt-5">
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Comprehensive Search</h6>
+                <Col className="order-md-2" md="6">
+                  <Card className="shadow shadow-lg--hover mt-5">
+                    <CardBody>
+                      <div className="d-flex px-3">
+                        <div>
+                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                            <i className="ni ni-check-bold" />
                           </div>
                         </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Review Solicitation</h6>
+                        <div className="pl-4">
+                          <h5 className="title text-success">
+                            Comprehensive Search
+                          </h5>
+                          <p>
+                            will increase chances to find the right therapist
+                          </p>
+                        </div>
+                      </div>
+                    </CardBody>
+                  </Card>
+                  <Card className="shadow shadow-lg--hover mt-5">
+                    <CardBody>
+                      <div className="d-flex px-3">
+                        <div>
+                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                            <i className="ni ni-check-bold" />
                           </div>
                         </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Therapists Profiles</h6>
+                        <div className="pl-4">
+                          <h5 className="title text-success">
+                            Review Solicitation
+                          </h5>
+                          <p>
+                            will gain potential clients’ trust from day one and
+                            eliminate biases
+                          </p>
+                        </div>
+                      </div>
+                    </CardBody>
+                  </Card>
+                  <Card className="shadow shadow-lg--hover mt-5">
+                    <CardBody>
+                      <div className="d-flex px-3">
+                        <div>
+                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                            <i className="ni ni-check-bold" />
                           </div>
                         </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Booking Therapists</h6>
+                        <div className="pl-4">
+                          <h5 className="title text-success">
+                            Peer Endorsements
+                          </h5>
+                          <p>
+                            will increase personal relationships, reputation and
+                            trust
+                          </p>
+                        </div>
+                      </div>
+                    </CardBody>
+                  </Card>
+                </Col>
+                <Col className="order-md-3" md="6">
+                  <Card className="shadow shadow-lg--hover mt-5">
+                    <CardBody>
+                      <div className="d-flex px-3">
+                        <div>
+                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                            <i className="ni ni-check-bold" />
                           </div>
                         </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Qualititive Rating</h6>
+                        <div className="pl-4">
+                          <h5 className="title text-success">Online Booking</h5>
+                          <p>
+                            will help reduce the time spend on back and forth
+                            communication.
+                          </p>
+                        </div>
+                      </div>
+                    </CardBody>
+                  </Card>
+                  <Card className="shadow shadow-lg--hover mt-5">
+                    <CardBody>
+                      <div className="d-flex px-3">
+                        <div>
+                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                            <i className="ni ni-check-bold" />
                           </div>
                         </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Peer Endorsements</h6>
+                        <div className="pl-4">
+                          <h5 className="title text-success">
+                            Qualitative Rating
+                          </h5>
+                          <p>
+                            will help clients find the right therapists that fit
+                            their personality and needs
+                          </p>
+                        </div>
+                      </div>
+                    </CardBody>
+                  </Card>
+                  <Card className="shadow shadow-lg--hover mt-5">
+                    <CardBody>
+                      <div className="d-flex px-3">
+                        <div>
+                          <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                            <i className="ni ni-check-bold" />
                           </div>
                         </div>
-                      </li>
-                    </ul>
-                  </div>
+                        <div className="pl-4">
+                          <h5 className="title text-success">
+                            Therapists Profiles
+                          </h5>
+                          <p>will increase visibility and easily searchable</p>
+                        </div>
+                      </div>
+                    </CardBody>
+                  </Card>
                 </Col>
               </Row>
             </Container>

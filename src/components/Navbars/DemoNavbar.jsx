@@ -43,7 +43,7 @@ class DemoNavbar extends React.Component {
                   alt="..."
                   src={require("assets/img/brand/argon-react-white.png")}
                 /> */}
-                <h2 style={{color: "white", textTransform: "none"}}> Serenpathy </h2>
+                <h2 style={{color: "white", textTransform: "none"}}> SERENPATHY </h2>
               </NavbarBrand>
               <button className="navbar-toggler" id="navbar_global">
                 <span className="navbar-toggler-icon" />
@@ -153,19 +153,6 @@ class DemoNavbar extends React.Component {
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>*/}
-                <Nav className="align-items-lg-center ml-lg-auto" navbar>
-                  <NavItem className="d-none d-lg-block ml-lg-4">
-                    <Button
-                      className="btn-neutral btn-icon"
-                      color="default"
-                      target="_blank"
-                    >
-                      <span className="nav-link-inner--text ml-1">
-                        Sign up
-                      </span>
-                    </Button>
-                  </NavItem>
-                </Nav>
               </UncontrolledCollapse>
             </Container>
           </Navbar>
